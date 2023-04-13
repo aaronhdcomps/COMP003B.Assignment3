@@ -28,7 +28,7 @@ namespace COMP003B.Assignment3
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Product}/{action=Index}/{id?}");
+                pattern: "{controller=Pants}/{action=Index}/{id?}");
 
             app.Run();
         }

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<COMP003B.Assignment3.Models.Product>
+﻿@model IEnumerable<COMP003B.Assignment3.Models.PantsPair>
 
 @{
     ViewData["Title"] = "Index";
@@ -37,9 +37,8 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new {  id = item.Id })
             </td>
         </tr>
 }
